@@ -7,7 +7,30 @@
   <title></title>
 </head>
     <body>
+      <br>
+      <br>
       <a href="index.php" button type="button" class="btn btn-primary btn-sm">Retour à l'accueil</button></a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="demo_apropos">
+    <button type="button" onclick="loadDoc()">Qui sont concernés par ses conditions?</button>
+    </div>
+    
+    <script>
+    function loadDoc() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("demo_apropos").innerHTML =
+          this.responseText;
+        }
+      };
+      xhttp.open("GET", "ajax_apropos.txt", true);
+      xhttp.send();
+    }
+    </script>
       <div class="apropos1">
         <br>
     <strong> CONDITIONS GENERALES ET RESPONSABILITES</strong> <br><br>
@@ -482,7 +505,7 @@ Digne, 16 décembre 18...
 
 «Baptistine.
 
-«P S. Madame votre belle-sœur est toujours ici avec sa jeune famille. Votre petit-neveu est charmant. Savez-vous qu'il a cinq ans bientôt? Hier il a vu passer un cheval auquel on avait mis des genouillères, et il disait : qu'est-ce qu'il a donc aux genoux? – Il est si gentil, cet enfant! Son petit frère traîne un vieux balai dans l'appartement comme une voiture et dit : Hu!»
+«P S. Madame votre belle-sœur est toujours ici avec sa'' jeune famille. Votre petit-neveu est charmant. Savez-vous qu'il a cinq ans bientôt? Hier il a vu passer un cheval auquel on avait mis des genouillères, et il disait : qu'est-ce qu'il a donc aux genoux? – Il est si gentil, cet enfant! Son petit frère traîne un vieux balai dans l'appartement comme une voiture et dit : Hu!»
 
 Comme on le voit par cette lettre, ces deux femmes savaient se plier aux façons d'être de l'évêque avec ce génie particulier de la femme qui souvent comprend l'homme mieux que l'homme ne se comprend. L'évêque de Digne, sous cet air doux et candide qui ne se démentait jamais, faisait parfois des choses grandes, hardies et magnifiques, sans paraître même s'en douter. Elles en tremblaient, mais elles le laissaient faire. Quelquefois madame Magloire essayait une remontrance avant; jamais pendant ni après. Jamais on ne le troublait, ne fût-ce que par un signe, dans une action commencée. A de certains moments, sans qu'il eût besoin de le dire, lorsqu'il n'en avait peut-être pas lui-même conscience, tant sa simplicité était parfaite, elles sentaient vaguement qu'il agissait comme évêque; alors elles n'étaient plus que deux ombres dans la maison. Elles le servaient passivement, et, si c'était obéir que de disparaître, elles disparaissaient. Elles savaient, avec une admirable délicatesse d'instinct, que de certaines sollicitudes peuvent gêner. Aussi, même le croyant en péril, elles comprenaient, je ne dirais pas sa pensée, mais sa nature, jusqu'au point de ne plus veiller sur lui. Elles le confiaient à Dieu.
 

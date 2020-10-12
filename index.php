@@ -2,6 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=1,shrink-to-fit=no">
     <link type="text/css" rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
@@ -44,7 +45,7 @@
     <div class="slider-buttons">
         <a href="#précédent" class="left">Précédent</a>
         <a href="#suivant" class="right">Suivant</a>
-    </div>
+        </div>
 </div>   
         </div>
 

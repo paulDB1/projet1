@@ -71,7 +71,23 @@ $(document).ready(function(){
       </select>
         <textarea name="message" rows="10" cols="30"></textarea>
         <br><br>
-        <input type="submit">
+        <div id="demo_contact">
+    <button type="button" onclick="loadDoc()">SOUMETTRE</button>
+    </div>
+    
+    <script>
+    function loadDoc() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("demo_contact").innerHTML =
+          this.responseText;
+        }
+      };
+      xhttp.open("GET", "ajax_contact.txt", true);
+      xhttp.send();
+    }
+    </script>
       </form> 
       <br>
 <div>
